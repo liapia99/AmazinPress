@@ -1,0 +1,103 @@
+body {
+
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+h1{
+  margin-top: -85px;
+  margin-left:-10px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  position: fixed;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  
+}
+.sidebar {
+  margin-top:70px;
+  padding: 0;
+  width: 200px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  color: black;
+}
+
+.sidebar a:hover:not(.active) {
+
+  color: #999999;
+}
+.sidebar not.active {
+
+  color: #999999;
+}
+.content {
+  margin-left: 200px;
+  padding-top: 200px;
+  display:flex;
+  padding-left:35px;
+ 
+}
+
+.words{
+margin-top: -290px;
+  margin-left: 600px;
+  margin-right: 95px;
+}
+
+.image{
+  padding-top: 100px;
+  margin-left: 200px;
+  margin-right: 95px;
+  width: 10%;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media (max-width: 380px) {
+.first3 {
+  display:flex;
+  margin-left: 20px;
+  justify-content: space-around;
+  
+}
+
+.last3{
+ display: flex;
+  margin-left: 20px;
+  justify-content: space-around;
+ 
+}
+.content{
+ margin: 100px 100px;
+  padding-top: 10px;
+  padding-left:35px; 
+  height: 40px;
+}
+.all{
+  flex-direction:column;
+}
